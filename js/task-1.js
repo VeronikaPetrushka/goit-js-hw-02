@@ -1,5 +1,6 @@
 function makeTransaction(quantity, pricePerDroid, customerCredits) {
-  totalPrice = quantity * pricePerDroid;
+  const totalPrice = quantity * pricePerDroid;
+  let message;
   if (customerCredits <= totalPrice) {
     message = "Insufficient funds!";
   } else {
